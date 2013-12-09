@@ -10,14 +10,11 @@
   <meta name="author" content="Jiandu">
   <meta name="robots" content="index,follow">
   <meta name="application-name" content="文化艺术活动策划与发布">
-
   <!-- Site CSS -->
   <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./dist/css/site.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="./dist/css/blueimp-gallery.css">
- 
-  <!-- Extras CSS -->
-  <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <link rel="stylesheet" href="./dist/css/blueimp-gallery.css"> 
+  
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
@@ -31,6 +28,7 @@
 <body>
 	<a class="sr-only" href="#content">直接查看展览</a>
     <header class="navbar navbar-inverse navbar-fixed-top" role="banner">
+      
       <div class="container">  
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,31 +37,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand hidden-sm" href="#"><img src="./dist/img/youran-logo-ch.png" border="0"></a>
+          <a class="navbar-brand" href="#"><img src="./dist/img/youran-logo-ch.png" border="0"></a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav hidden-xs"><!--
-            <li><a href="#content"><span class="glyphicon glyphicon-resize-full"></span><span class="glyphicon glyphicon-resize-small" ></span>今日印象</a></li> 
-            
-            <li class="dropdown">
-              <a href="/exth" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list"></span> 展览<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" target="_blank">南京</a></li>    
-                 <li><a href="#" target="_blank">北京</a></li>
-                  <li><a href="#" target="_blank">上海</a></li>
-                   <li><a href="#" target="_blank">广州</a></li>
-                    <li><a href="#" target="_blank">香港</a></li>
-                     <li><a href="#" target="_blank">台湾</a></li>
-                      <li><a href="#" target="_blank">其他</a></li>           
-              </ul>
-            </li> -->
+          <ul class="nav navbar-nav hidden-xs">
             <li><a href="#">印象流</a></li><!--按喜欢程度列出所有图片、视频、地图标签-->
             <li><a href="#"><span class="glyphicon glyphicon-qrcode"></span> 艺术家</a></li>
-			<li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> 提交展览</a></li>
-			<li><a href="#" title="与明星见面，youran.in帮您见到ta"><span class="glyphicon glyphicon-star"></span> 要求举办</a></li>
+			<li class="hidden-sm"><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> 提交展览</a></li>
+			<li class="hidden-sm"><a href="#" title="与明星见面，youran.in帮您见到ta"><span class="glyphicon glyphicon-star"></span> 要求举办</a></li>
           </ul>
 		 
-		  <form class="navbar-form navbar-left" role="search">
+		  <form class="navbar-form navbar-left hidden-xs" role="search">
             <div class="form-group">
               <input type="text" class="form-control input-sm" placeholder="艺术家、展览、作品">
             </div>
@@ -72,7 +56,7 @@
 		  <ul class="nav navbar-nav navbar-right">
 		    <li style="display: none;"><a href="/sigup">注册</a></li>
 			<li style="display: none;"><a href="/login">登录</a></li>
-			<li><a title="扫描二维码，订阅微信、微博公众号"><span class="glyphicon glyphicon-envelope"></span> 订阅本站</a></li>
+			<li class="hidden-xs hidden-md hidden-sm"><a title="扫描二维码，订阅微信、微博公众号"><span class="glyphicon glyphicon-envelope"></span> 订阅本站</a></li>
 			<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" data-src="holder.js/24x24" alt="" style="width: 24px; height: 24px;" src="http://img3.douban.com/icon/u55878228-15.jpg"> 我的印象 <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -90,6 +74,7 @@
           </ul>
         </nav>
       </div>
+   
     </header>
 
 
@@ -258,7 +243,5 @@
         <!--百度统计代码-->  
 
 
-
-
-  <a id="scrollUp" href="#top" title="" style="position: fixed; z-index: 2147483647; display: block;"></a><!--需要添加锚点：顶部、展览推荐、精品推荐-->
+  <a id="scrollUp" href="#top" title="" style="position: fixed; z-index: 2147483647; display: block;"></a>
 </body></html>

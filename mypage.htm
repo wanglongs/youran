@@ -2,22 +2,19 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title><%=用户名>_悠然印象</title>
+  <title><%=用户名%>_悠然印象</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="title" content="<%=用户名>_悠然印象"/>
+  <meta name="title" content="<%=用户名%>_悠然印象"/>
   <meta name="description" content="<%=用户名%>，<%=用户描述%>">
-  <meta name="keywords" content="<%=用户名>, <%=用户描述%>, 悠然印象, 艺术品展览信息, 艺术作品展览画册, 艺术家作品集">
-  <meta name="author" content="南京建都信息科技有限公司">
+  <meta name="keywords" content="<%=用户名%>, <%=用户描述%>, 悠然印象, 艺术品展览信息, 艺术作品展览画册, 艺术家作品集">
+  <meta name="author" content="Jiandu">
   <meta name="application-name" content="个人空间">
 
   <!-- Site CSS -->
   <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="./dist/css/site.min.css" rel="stylesheet">
- 
 
-  <!-- Extras CSS -->
-  <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
   <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
   <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
@@ -39,29 +36,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand hidden-sm" href="#"><img src="./dist/img/youran-logo-ch.png" border="0"></a>
+          <a class="navbar-brand" href="#"><img src="./dist/img/youran-logo-ch.png" border="0"></a>
         </div>
         <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav hidden-xs"><!--
-            <li><a href="#content"><span class="glyphicon glyphicon-resize-full"></span><span class="glyphicon glyphicon-resize-small" ></span>今日印象</a></li> 
-            
-            <li class="dropdown">
-              <a href="/exth" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list"></span> 展览<b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#" target="_blank">南京</a></li>    
-                 <li><a href="#" target="_blank">北京</a></li>
-                  <li><a href="#" target="_blank">上海</a></li>
-                   <li><a href="#" target="_blank">广州</a></li>
-                    <li><a href="#" target="_blank">香港</a></li>
-                     <li><a href="#" target="_blank">台湾</a></li>
-                      <li><a href="#" target="_blank">其他</a></li>           
-              </ul>
-            </li> -->
+          <ul class="nav navbar-nav hidden-xs">
+            <li><a href="#">印象流</a></li><!--按喜欢程度列出所有图片、视频、地图标签-->
             <li><a href="#"><span class="glyphicon glyphicon-qrcode"></span> 艺术家</a></li>
-			<li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> 提交展览</a></li>
+			<li class="hidden-sm"><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> 提交展览</a></li>
+			<li class="hidden-sm"><a href="#" title="与明星见面，youran.in帮您见到ta"><span class="glyphicon glyphicon-star"></span> 要求举办</a></li>
           </ul>
 		 
-		  <form class="navbar-form navbar-left" role="search">
+		  <form class="navbar-form navbar-left hidden-xs" role="search">
             <div class="form-group">
               <input type="text" class="form-control input-sm" placeholder="艺术家、展览、作品">
             </div>
@@ -70,15 +55,15 @@
 		  <ul class="nav navbar-nav navbar-right">
 		    <li style="display: none;"><a href="/sigup">注册</a></li>
 			<li style="display: none;"><a href="/login">登录</a></li>
-			<li><a href="/add"><span class="glyphicon glyphicon-envelope"></span> 订阅本站</a></li>
+			<li class="hidden-xs hidden-md hidden-sm"><a title="扫描二维码，订阅微信、微博公众号"><span class="glyphicon glyphicon-envelope"></span> 订阅本站</a></li>
 			<li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" data-src="holder.js/24x24" alt="" style="width: 24px; height: 24px;" src="http://img3.douban.com/icon/u55878228-15.jpg"> 我的印象 <b class="caret"></b></a>
               <ul class="dropdown-menu">
               	<li><a href="#">喜欢的</a></li>
                 <li><a href="#">提交的</a></li>
-                
-                <li class="hidden-xs"><a href="#">邀请好友加入</a></li>
-                
+
+                <li><a href="#">邀请好友加入</a></li>
+
                 
                 <li class="divider"></li>
                 <li><a href="#">设置</a></li>
@@ -167,7 +152,7 @@
       <!-- FOOTER -->
     <footer class="footer ">
       <p><a href="#">关于我们</a> | <a href="#" target="_blank">工作机会</a> | <a href="#" target="_blank">联系方式</a> | <a href="#" target="_blank">帮助</a> | <a href="#" target="_blank">友情链接</a></p>
-      <p>Powered By <a href="http://youran.in/" target="_blank" title="悠然网">youran.in</a></p>
+      <p>Powered By <a href="http://youran.in/" target="_blank" title="悠然印象">youran.in</a></p>
       <p>
         <a href="http://www.miibeian.gov.cn/" target="_blank">苏ICP备11008151号</a>
       </p>
@@ -178,29 +163,10 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./dist/js/jquery.js"></script>
     <script src="./dist/js/bootstrap.min.js"></script>
-    <script src="./dist/js/jquery.unveil.min.js"></script>
-    <script src="./dist/js/jquery.scrollUp.min.js"></script>
-    <script>
-      $(document).ready(function(){
-        $("img.lazy").unveil();
-
-        $.scrollUp({
-              scrollName: 'scrollUp', // Element ID
-              topDistance: '300', // Distance from top before showing element (px)
-              topSpeed: 300, // Speed back to top (ms)
-              animation: 'fade', // Fade, slide, none
-              animationInSpeed: 200, // Animation in speed (ms)
-              animationOutSpeed: 200, // Animation out speed (ms)
-              scrollText: '', // Text for element
-              activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
-        });
-      });
-    </script>
 
         <!--百度统计代码-->  
 
 
 
 
-  <a id="scrollUp" href="#top" title="" style="position: fixed; z-index: 2147483647; display: block;"></a><!--需要添加锚点：顶部、展览推荐、精品推荐-->
 </body></html>
