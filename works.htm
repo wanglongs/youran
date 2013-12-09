@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title><%=作品名称%>_<%=艺术家%>_悠然印象</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="title" content="<%=作品名称%>_<%=艺术家%>_悠然印象"/>
+  <meta name="description" content="<%=艺术家%>，<%=作品名称%>，<%=作品描述=>">
+  <meta name="keywords" content="<%=展览名称%>,_<%=展览馆>, <%=参展艺术家>, 悠然印象, 艺术品展览信息, 艺术作品展览画册, 艺术家作品集">
+  <meta name="author" content="南京建都信息科技有限公司">
+  <meta name="application-name" content="艺术品展览信息">
+
+  <!-- Site CSS -->
+  <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./dist/css/site.min.css" rel="stylesheet">
+ 
+
+  <!-- Extras CSS -->
+  <!--[if lt IE 9]><script src="../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+  <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+  <!-- Favicons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./dist/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="./dist/ico/favicon.png">
+</head>
+
+<body style="">
+
+  <nav class="navbar navbar-default" role="navigation"><header class="navbar navbar-inverse navbar-fixed-top bs-nav" role="banner">
+      <div class="container">  
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only"></span>
+			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand hidden-sm" href="#"><img src="./dist/img/youran-logo-ch.png" border="0"></a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav hidden-xs"><!--
+            <li><a href="#content"><span class="glyphicon glyphicon-resize-full"></span><span class="glyphicon glyphicon-resize-small" ></span>今日印象</a></li> 
+            
+            <li class="dropdown">
+              <a href="/exth" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-list"></span> 展览<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" target="_blank">南京</a></li>    
+                 <li><a href="#" target="_blank">北京</a></li>
+                  <li><a href="#" target="_blank">上海</a></li>
+                   <li><a href="#" target="_blank">广州</a></li>
+                    <li><a href="#" target="_blank">香港</a></li>
+                     <li><a href="#" target="_blank">台湾</a></li>
+                      <li><a href="#" target="_blank">其他</a></li>           
+              </ul>
+            </li> -->
+            <li><a href="#"><span class="glyphicon glyphicon-qrcode"></span> 艺术家</a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-cloud-upload"></span> 提交展览</a></li>
+          </ul>
+		 
+		  <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control input-sm" placeholder="艺术家、展览、作品">
+            </div>
+            <button type="submit" class="btn btn-default btn-sm">搜索</button>
+          </form>
+		  <ul class="nav navbar-nav navbar-right">
+		    <li style="display: none;"><a href="/sigup">注册</a></li>
+			<li style="display: none;"><a href="/login">登录</a></li>
+			<li><a href="/add"><span class="glyphicon glyphicon-envelope"></span> 订阅本站</a></li>
+			<li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img class="img-circle" data-src="holder.js/24x24" alt="" style="width: 24px; height: 24px;" src="http://img3.douban.com/icon/u55878228-15.jpg"> 我的印象 <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+              	<li><a href="#">喜欢的</a></li>
+                <li><a href="#">提交的</a></li>               
+                
+                <li class="hidden-xs"><a href="#">邀请好友加入</a></li>
+               
+                
+                <li class="divider"></li>
+                <li><a href="#">设置</a></li>
+				<li><a href="#">退出</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header></nav>    
+    
+    <div id="works" class="image"><!--works template-->    	
+		  			  
+	    <div class="works-view">
+	    			
+	    	<div class="works-media">
+	    		<div class="content fadein">  
+	    			<div class="content-image">
+	    				<img class="img-responsive" src="./dist/images/original.jpg" style="height: auto; max-height: 684.5999999999999px; cursor: default;">
+	    			</div>
+	    		</div>
+	    			<a class="prev-works" title="上一个印象 (←)"><span>‹</span></a>
+	            	<a class="next-works" title="下一个印象 (→)"><span>›</span></a>
+	        </div>
+	        		
+	        <div class="works-description">
+				<div class="path"><ol class="breadcrumb ">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">2012年青年艺术展</a></li>
+					<li><a href="#">活动现场</a></li>
+					<li class="active">印象名称</li>
+				</ol></div>
+	    		<div class="content">
+	    			<div class="media">
+						<a class="pull-left" href="#"><img class="img-circle" data-src="holder.js/24x24" alt=""  src="http://img3.douban.com/icon/u55878228-15.jpg"></a>
+						<div class="media-body">
+							<h5 class="media-heading"><a href="/jorilallo" data-link="push">唐悠悠</a><a href="/pro/" tabindex="-1" title="悠然印象认证机构用户" class="pro-badge">机构</a>于 <abbr class="date" title="">2013,8,29</abbr>
+	                    	    	保存到 <a href="/jorilallo/design"><abbr title="2013-11-1开始至2013-11-30结束">2012年青年艺术家群展</abbr></a></h5>
+         							 “Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio …… ”  
+						</div>
+					</div><br />
+	        		<table class="table table-hover"><thead><tr><th colspan="2">印象卡片<!--Jiathis 分享代码--></th></tr></thead>
+        				<tbody>
+          					<tr><td>名称</td><td>列支敦士登王室</td></tr>
+          					<tr><td>艺术家</td><td>齐白石</td></tr>
+          					<tr><td>年代</td><td>2013年</td></tr>
+          					<tr><td>材质</td><td>纸本</td></tr>
+          					<tr><td>尺寸</td><td>90cm x 83cm</td></tr>
+        				</tbody>
+      				</table>           
+	       		</div>
+	       		
+	    	</div><!--作品信息结束-->
+	        		
+	        			
+	    	<div class="comments">
+	            <div class="content">
+	                <div class="likes">
+	                    
+	                    
+	                    
+	                    <ul><li><a href="/signup/" class="like" rel="tooltip" data-original-title="Login to like"></a><!--如果没有登录，点击喜欢要求登陆。--></li>
+	                    	<li><a href="/ltthws" data-link="push" title="用户名字"><img src="http://img3.douban.com/icon/u55878228-15.jpg" class="img-circle"></a> </li>
+	                    	<li><a href="/saturngod" data-link="push" title="用户名字"><img src="http://img3.douban.com/icon/u55878228-15.jpg" class="img-circle"></a> </li>
+	                    	<li><a href="/lchow" data-link="push" title="用户名字"><img src="http://img3.douban.com/icon/u55878228-15.jpg" class="img-circle"></a> </li>
+	                    	<li><a href="/x10" data-link="push" title="用户名字"><img src="http://img3.douban.com/icon/u55878228-15.jpg" class="img-circle"></a> </li>
+	                    </ul>
+	                    <p class="no-likes">还没有一个人喜欢</p>
+	               	</div>
+	                <h4 class="text-center">最近被喜欢的印象</h4>
+	               
+	                <div class="works-like-list">
+	                	 <div class="row">
+  							<div class="col-sm-6 col-md-4">
+    							<div class="thumbnail">
+      								<div class="card-hd">
+										<a href="#" title="" target="_blank"><img  src="http://picture-resources-310.oss.aliyuncs.com/58f81318-9482-462f-bcb9-4b2cde402455.jpg" data-src="http://qiniuphotos.qiniudn.com/gogopher.jpg?imageView/2/w/320/h/320" alt=""></a>
+										<div class="commodity-info"><a href="#" title="" target="_blank" >列支敦士登王室</a></div>
+									</div>
+								</div>
+   
+  							</div>
+
+						</div>
+	                </div>	                
+	                		
+	                
+	            </div>
+	    	</div><!--./commnets-->
+	        
+	        
+	        <div class="works-description">
+	
+	    		<div class="content">
+	    			<h4 class="text-center">关于齐白石的印象</h4>
+	    			<div class="row">
+  							<div class="col-sm-6 col-md-4">
+    							<div class="thumbnail">
+      								<div class="card-hd">
+										<a href="#" title="" target="_blank"><img  src="http://picture-resources-310.oss.aliyuncs.com/58f81318-9482-462f-bcb9-4b2cde402455.jpg" data-src="http://qiniuphotos.qiniudn.com/gogopher.jpg?imageView/2/w/320/h/320" alt=""></a>
+										<div class="commodity-info"><a href="#" title="" target="_blank" >列支敦士登王室</a></div>
+									</div>
+								</div>
+   
+  							</div>
+
+						</div>
+	    		</div>
+	    	</div><!--./Rela works-->	        
+	        		
+	        		
+	        			
+		</div><!--./works-views-->		
+		
+	</div>
+
+	
+    <!-- FOOTER -->
+    <footer class="footer ">
+      <p><a href="#">关于我们</a> | <a href="#" target="_blank">工作机会</a> | <a href="#" target="_blank">联系方式</a> | <a href="#" target="_blank">帮助</a> | <a href="#" target="_blank">友情链接</a></p>
+      <p>Powered By <a href="http://youran.in/" target="_blank" title="悠然网">youran.in</a></p>
+      <p>
+        <a href="http://www.miibeian.gov.cn/" target="_blank">苏ICP备11008151号</a>
+      </p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./dist/js/jquery.js"></script>
+    <script src="./dist/js/bootstrap.min.js"></script>
+    <script src="./dist/js/jquery.unveil.min.js"></script>
+    <script src="./dist/js/jquery.scrollUp.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("img.lazy").unveil();
+
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              topDistance: '300', // Distance from top before showing element (px)
+              topSpeed: 300, // Speed back to top (ms)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '', // Text for element
+              activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+      });
+    </script>
+
+
+        <!--百度统计代码-->  
+
+  <a id="scrollUp" href="#top" title="" style="position: fixed; z-index: 2147483647; display: block;"></a><!--需要添加锚点：顶部、展览推荐、精品推荐-->
+</body></html>
